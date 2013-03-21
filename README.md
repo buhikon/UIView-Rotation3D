@@ -30,6 +30,15 @@ OR
 [![](https://raw.github.com/buhikon/UIView-Rotation3D/master/showcase.gif)](https://raw.github.com/buhikon/UIView-Rotation3D/master/showcase.gif)
 
 
+## Issues
+
+Don't change the frame of the view after calling `hideRotation3D`.
+Before changing it, you should call `showRotation3D` first.
+
+For this, you can check the state of the view by calling `view.rotation3DStateHidden`.
+If the value is YES, the view is currently in HIDDEN state.
+
+
 ## Requirements
 
 - QuartzCore framework in your project
