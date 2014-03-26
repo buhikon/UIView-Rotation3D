@@ -20,13 +20,6 @@ static char const * const kRotation3DStateTagKey = "kRotation3DStateKey";
 @dynamic rotation3DAnimationDuration;
 @dynamic rotation3DAnimationDelay;
 
-
-- (void)dealloc
-{
-    self.rotation3Dstate = nil;
-    [super dealloc];
-}
-
 #pragma mark - accessor
 //getter
 - (NSMutableDictionary *)rotation3Dstate
